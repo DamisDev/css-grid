@@ -11,7 +11,7 @@ p {
 
 .flexbox-header > div {
   display: flex;
-  font-size: 1em;
+  font-size: 01em;
   padding: 10px 20px;
 }
 
