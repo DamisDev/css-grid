@@ -1,29 +1,49 @@
-.container > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    color: #ffeead;
-    font-family: fantasy;
-}
-
 html, body {
   background-color: #ffeead;
   margin: 10px;
+  font-size: 20px;
 }
 
-.container > div:nth-child(1n) {
-  background-color: #96ceb4;	
+p {
+  color: #96ceb4;
+  text-align: center;
 }
 
-.container > div:nth-child(3n) {
-  background-color: #88d8b0;
+.flexbox-header > div {
+  display: flex;
+  font-size: 01em;
+  padding: 10px 20px;
 }
 
-.container > div:nth-child(2n) {
-      background-color: #ff6f69;
+.flexbox-header {
+  background-color: #96ceb4;
+  color: #ffeead;
 }
 
-.container > div:nth-child(4n) {
-      background-color: #ffcc5c;
+
+.header {
+    background-color: #96ceb4;	
+}
+
+.header :nth-child(2) {
+    padding: 0 40px;
+}
+
+.menu {
+    background-color: #ff6f69;
+}
+
+.content {
+    background-color: #ffcc5c;
+}
+
+.footer {
+    background-color: #88d8b0;
+}
+
+.grid-page > div {
+    color: #ffeead;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
 }
