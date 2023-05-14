@@ -1,9 +1,15 @@
 .container{
+    height: 100%;
     display: grid;
+    grid-gap: 3px;
     grid-template-columns: repeat(12, 1fr); /*12 COLOMNS EACH OF 1 FRACTION*/
     grid-template-rows: 40px 200px 40px;
     /* grid-template: repeat(2, 50px) / repeat(3, 1fr);  rows() / columns() */
-    grid-gap: 3px;
+    grid-template-areas: 
+        "m h h h h h h h h h h h"
+        "m c c c c c c c c c c c"
+        "m f f f f f f f f f f f";
+    
 }
 
 /* structure: grid-column: 2/-1 (rows LINE/columns LINE) --> grid-rows: 1/4 rows/columns*/
@@ -13,17 +19,21 @@
     grid-column-end: -1; */
 
     /*THIS IS A SHORT METHOD:font-size: ;*/
-    grid-column: 2 /-1;
+    /* grid-column: 1 /-1; */
+    grid-area: h;
 }
 
 .menu {
-    grid-row: 1 / 4;
+    /* grid-row: 1 / 4; */
+    grid-area: m;
 }
 
 .content {
-    grid-column: 2 / -1;
+    /* grid-column: 2 / -1; */
+    grid-area: c;
 }
 
 .footer {
-    grid-column: 2 / -1;
-}
+    /* grid-column: 1 / -1;*/
+    grid-area: f;
+} 
